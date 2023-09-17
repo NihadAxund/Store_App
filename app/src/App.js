@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Storeproduct from './Companent/Storeproduct';
 function App() {
   return (
    
@@ -12,7 +13,7 @@ function App() {
           </section>
           <div className='Product-List-1'>
             <Routes>
-
+            <Route exact path="/" element={<Storeproduct />} ></Route>
             </Routes>
           </div>
         </div>

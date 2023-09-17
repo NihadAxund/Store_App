@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import Product from './Product';
 import { useSelector, useDispatch } from "react-redux";
 
-import { allBooks } from "../features/storeProductSlice";
 function Storeproduct() {
  //const [books, setBooks] = useImmer([]);
   const value = useSelector((state) => state.books.value);
@@ -12,6 +11,7 @@ function Storeproduct() {
   function List(){
     return value.map((item) => {
       if (item != null) {
+        alert("a")
         return <Product product={item} />;
       }
     });
@@ -33,8 +33,8 @@ function Storeproduct() {
 
   return (
     
-    // {List()}
     <div className='Book-List'>
+      <h1>A</h1>
     </div>
   );
 }

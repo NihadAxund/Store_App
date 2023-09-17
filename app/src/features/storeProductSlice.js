@@ -1,6 +1,6 @@
 import {createSlice} from '@reduxjs/toolkit'
-import { GetBooksQuery,GetBookData } from '../services/book';
-import Favorite from '../Companent/Favorite';
+import { GetBooksQuery,GetBookData } from '../services/storeproduct';
+// import Favorite from '../Companent/Favorite';
 import Cookies from 'js-cookie';
 
 const initialState = {
@@ -24,7 +24,7 @@ function getcook(){
 }
 
 
-export const StoreProductSlice= createSlice({
+export const storeProductSlice= createSlice({
     name:'books',
     initialState,
     reducers:{
@@ -64,5 +64,5 @@ export const StoreProductSlice= createSlice({
 
 
 
-export const {allBooks,AddFovarite,DeleteFovarite} = StoreProductSlice.actions;
-export default StoreProductSlice.reducer
+export const {allBooks,AddFovarite,DeleteFovarite} = storeProductSlice.actions;
+export default storeProductSlice.reducer
