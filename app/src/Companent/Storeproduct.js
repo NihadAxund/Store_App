@@ -32,8 +32,9 @@ function Storeproduct() {
   
 
   return (
-    // {List()}
+    //{List()}
     <div className='Product-List'>
+    
     </div>
   );
 }

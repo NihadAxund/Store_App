@@ -1,9 +1,9 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-const BASE_URL = 'https://data.aykhan.net/data/general/';
+const BASE_URL = 'https://raw.githubusercontent.com/NihadAxund/booksList/main/';
 
 function FetchData() {
-    return fetch('https://data.aykhan.net/data/general/books.json')
+    return fetch('https://raw.githubusercontent.com/NihadAxund/booksList/main/book.json')
       .then((response) => {
         if (response.ok) {
           return response.json();
