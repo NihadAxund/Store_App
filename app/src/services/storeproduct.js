@@ -1,9 +1,9 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-const BASE_URL = '';
+const BASE_URL = 'https://data.aykhan.net/data/general/';
 
 function FetchData() {
-    return fetch('')
+    return fetch('https://data.aykhan.net/data/general/books.json')
       .then((response) => {
         if (response.ok) {
           return response.json();
@@ -34,7 +34,7 @@ function FetchData() {
   
 
 export const StoreProductApi = createApi({
-    reducerPath: 'productApi',
+    reducerPath: 'bookApi',
     baseQuery: async () => {
         try {
             const response = await fetch(`${BASE_URL}books.json`);
@@ -57,3 +57,5 @@ export const StoreProductApi = createApi({
 });
 
 export const { GetBooksQuery } = StoreProductApi;
+
+
