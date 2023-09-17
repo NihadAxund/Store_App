@@ -24,7 +24,7 @@ function getcook(){
 }
 
 
-export const bookSlice= createSlice({
+export const StoreProductSlice= createSlice({
     name:'books',
     initialState,
     reducers:{
@@ -64,5 +64,5 @@ export const bookSlice= createSlice({
 
 
 
-export const {allBooks,AddFovarite,DeleteFovarite} = bookSlice.actions;
-export default bookSlice.reducer
+export const {allBooks,AddFovarite,DeleteFovarite} = StoreProductSlice.actions;
+export default StoreProductSlice.reducer

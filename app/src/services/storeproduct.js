@@ -33,7 +33,7 @@ function FetchData() {
   };
   
 
-export const bookApi = createApi({
+export const StoreProductApi = createApi({
     reducerPath: 'productApi',
     baseQuery: async () => {
         try {
@@ -56,4 +56,4 @@ export const bookApi = createApi({
     }),
 });
 
-export const { GetBooksQuery } = bookApi;
+export const { GetBooksQuery } = StoreProductApi;
