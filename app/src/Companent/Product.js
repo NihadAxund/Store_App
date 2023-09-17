@@ -1,5 +1,5 @@
 import React from 'react'
-import { allBooks,AddFovarite,DeleteFovarite } from "../features/bookSlice";
+import { allBooks,AddFovarite,DeleteFovarite } from "../features/storeProductSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 export default function Product({ product }) {

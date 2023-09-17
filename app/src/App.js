@@ -13,7 +13,7 @@ function App() {
           </section>
           <div className='Product-List-1'>
             <Routes>
-            <Route exact path="/" element={<Storeproduct />} ></Route>
+              <Route exact path="/" element={<Storeproduct />} ></Route>
             </Routes>
           </div>
         </div>

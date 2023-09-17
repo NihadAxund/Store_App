@@ -11,7 +11,7 @@ function Storeproduct() {
   function List(){
     return value.map((item) => {
       if (item != null) {
-        alert("a")
+        
         return <Product product={item} />;
       }
     });
@@ -32,9 +32,8 @@ function Storeproduct() {
   
 
   return (
-    
-    <div className='Book-List'>
-      <h1>A</h1>
+    <div className='Product-List'>
+      {List()}
     </div>
   );
 }
