@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 const BASE_URL = 'https://data.aykhan.net/data/general/';
 
 function FetchData() {
-    return fetch('https://data.aykhan.net/data/general/books.json')
+    return fetch('')
       .then((response) => {
         if (response.ok) {
           return response.json();
