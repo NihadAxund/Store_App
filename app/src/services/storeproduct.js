@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
-const BASE_URL = 'https://data.aykhan.net/data/general/';
+const BASE_URL = '';
 
 function FetchData() {
     return fetch('')
