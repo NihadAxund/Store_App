@@ -66,7 +66,6 @@ export default function Product({ product }) {
                 <section className='product_src'>
                     <section>
                         <button onClick={FavClick} style={{backgroundColor:"red"}} Tag="False">
-
                         </button>
                     </section>
                     <img src={product.CoverUrl}></img>
