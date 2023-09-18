@@ -2,12 +2,12 @@ import { configureStore } from '@reduxjs/toolkit'
 // Or from '@reduxjs/toolkit/query/react'
 import { setupListeners } from '@reduxjs/toolkit/query'
 import { StoreProductApi } from './services/storeproduct'
-import bookReducer from '../src/features/storeProductSlice'
+import productsReducer from '../src/features/storeProductSlice'
 
 export const store = configureStore({
   reducer: {
     [StoreProductApi.reducerPath]: StoreProductApi.reducer,
-    books:bookReducer
+    products:productsReducer
   },
 
 

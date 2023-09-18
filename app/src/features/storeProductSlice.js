@@ -25,10 +25,10 @@ function getcook(){
 
 
 export const storeProductSlice= createSlice({
-    name:'books',
+    name:'products',
     initialState,
     reducers:{
-        allBooks:(state)=>{
+        allproducts:(state)=>{
             return state.value;
         },
         AddFovarite:(state,action)=>{

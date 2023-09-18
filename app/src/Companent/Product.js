@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 export default function Product({ product }) {
     const dispatch = useDispatch();
-    const value1 = useSelector((state) => state.books.FovariteList);
+    const value1 = useSelector((state) => state.products.FovariteList);
     function FavClick(e) {
         e.preventDefault();
 
@@ -13,9 +13,6 @@ export default function Product({ product }) {
             e.target.style.backgroundColor = "red";
             e.target.Tag="False"
             dispatch(DeleteFovarite(product));
-
-        
-            
         }
         else{
             e.target.style.backgroundColor = "blue";
