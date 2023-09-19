@@ -41,16 +41,14 @@ export default function Product({ product }) {
                         <button onClick={FavClick} Tag="True" style={{backgroundColor:"blue"}}>
                         </button>
                     </section>
-                    <img src={product.CoverUrl}></img>
+                    <img src={product.imageUrl}></img>
                 </section>
                 <section className='productName'>
-                    {product.Title}
+                    {product.productName}
                 </section>
                 
-                <span>
-                    {product.Publisher}
-                </span>
                 <section className='ProductPrice'>
+                    {product.price}
                 </section>
     
     
@@ -65,15 +63,13 @@ export default function Product({ product }) {
                         <button onClick={FavClick} style={{backgroundColor:"red"}} Tag="False">
                         </button>
                     </section>
-                    <img src={product.CoverUrl}></img>
+                    <img src={product.imageUrl}></img>
                 </section>
                 <section className='productName'>
-                    {product.Title}
+                    {product.productName}
                 </section>
-                <Link className='spanLink' to="/DetalUser">
-                    {product.Publisher}
-                </Link>
                 <section className='ProductPrice'>
+                    {product.price}
                 </section>
     
     
